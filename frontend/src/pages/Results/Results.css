@@ -1,0 +1,26 @@
+.resultsPage{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:28px 20px;
+    background-image:
+        linear-gradient(
+            180deg,
+            rgba(3,6,11,.72),
+            rgba(7,24,38,.78),
+            rgba(2,4,7,.82)
+        ),
+        url("../../assets/images/gems/fondo_general.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    color:white;
+}
+
+.resultsPage h1{
+    color:#2fd9ff;
+    letter-spacing:2px;
+    text-shadow:0 0 14px rgba(45,231,255,.45);
+}

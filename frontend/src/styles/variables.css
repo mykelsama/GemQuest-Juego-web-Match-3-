@@ -1,0 +1,35 @@
+:root{
+
+    /* Fondo */
+
+    --background:#0f172a;
+
+    --background2:#1e1b4b;
+
+    /* Primarios */
+
+    --primary:#2563eb;
+
+    --secondary:#6d28d9;
+
+    /* Gemas */
+
+    --emerald:#22c55e;
+
+    --ruby:#ef4444;
+
+    --gold:#facc15;
+
+    --crystal:#38bdf8;
+
+    /* Texto */
+
+    --white:#ffffff;
+
+    --gray:#cbd5e1;
+
+    /* Tarjetas */
+
+    --card:rgba(255,255,255,.08);
+
+}

@@ -1,0 +1,93 @@
+/* Pantalla principal del home con fondo completo. */
+.home{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    position:relative;
+    background-image:
+        linear-gradient(
+            180deg,
+            rgba(3,6,11,.72),
+            rgba(7,24,38,.78),
+            rgba(2,4,7,.82)
+        ),
+        url("../../assets/images/gems/fondo_general.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+/* Contenedor central del contenido del inicio. */
+.homeContainer{
+    width:min(460px,92vw);
+    padding:48px 40px;
+    text-align:center;
+    position:relative;
+    z-index:10;
+}
+
+/* Logo o icono principal con animación flotante. */
+.logo{
+    font-size:72px;
+    margin-bottom:12px;
+    animation:float 3s ease-in-out infinite;
+    filter:drop-shadow(0 0 18px rgba(45,231,255,.7));
+}
+
+/* Título principal de la pantalla. */
+.title{
+    color:#d8ebff;
+    font-size:44px;
+    font-weight:800;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    text-shadow:
+        0 1px 0 rgba(255,255,255,.2),
+        0 0 18px rgba(120,180,255,.4);
+}
+
+/* Texto descriptivo debajo del título. */
+.subtitle{
+    margin-top:12px;
+    margin-bottom:36px;
+    color:#c8e4f4;
+    opacity:.92;
+    font-size:16px;
+    line-height:1.6;
+}
+
+/* Halo decorativo superior izquierdo. */
+.home::before{
+    content:"";
+    position:absolute;
+    width:550px;
+    height:550px;
+    border-radius:50%;
+    background:rgba(45,231,255,.05);
+    top:-180px;
+    left:-120px;
+    filter:blur(15px);
+}
+
+/* Halo decorativo inferior derecho. */
+.home::after{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    border-radius:50%;
+    background:rgba(255,79,216,.04);
+    bottom:-150px;
+    right:-80px;
+    filter:blur(20px);
+}
+
+/* Animación sutil de flotación para el logo. */
+@keyframes float{
+    0%{ transform:translateY(0); }
+    50%{ transform:translateY(-10px); }
+    100%{ transform:translateY(0); }
+}

@@ -1,0 +1,27 @@
+/* Contenedor principal de las pantallas de autenticación. */
+.authPage{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:24px;
+    background-image:
+        linear-gradient(
+            180deg,
+            rgba(3,6,11,.72),
+            rgba(7,24,38,.78),
+            rgba(2,4,7,.82)
+        ),
+        url("../../assets/images/gems/fondo_general.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    color:white;
+}
+
+/* Tarjeta central donde se renderiza el formulario. */
+.authCard{
+    width:min(420px,100%);
+    padding:36px 32px;
+}
